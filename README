@@ -1,3 +1,7 @@
 This is a collection of patches I wrote / planning to write for Nheko.  
-They are as follows:
+They are as follows:  
 
+makemessagesrainbowbydefault.diff  
+Makes all messages rainbow (as if you typed in `/rainbow` before every message).  
+To send a 'normal' message (you boring conformer),  
+prefix a message with /plain or /md respectively.  
