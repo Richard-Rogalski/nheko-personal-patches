@@ -1,0 +1,19 @@
+*** /src/timeline/InputBar.cpp  2022-01-24 19:34:59.650679603 -0600
+--- /src/timeline/InputBar.r.cpp        2022-01-24 19:35:16.830679989 -0600
+***************
+*** 253,259 ****
+              command(name, args);
+          }
+      } else {
+!         message(text());
+      }
+
+      if (!wasEdit) {
+--- 253,259 ----
+              command(name, args);
+          }
+      } else {
+!         message(text(), MarkdownOverride::ON, true);
+      }
+
+      if (!wasEdit) {
