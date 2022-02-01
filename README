@@ -1,7 +1,12 @@
-This is a collection of patches I wrote / planning to write for Nheko.  
+This is a collection of patches I wrote / am planning to write for Nheko.  
 They are as follows:  
 
 makemessagesrainbowbydefault.diff  
 Makes all messages rainbow (as if you typed in `/rainbow` before every message).  
 To send a 'normal' message (you boring conformer),  
 prefix a message with /plain or /md respectively.  
+
+ilikemyfriends,makerainbowsreadable1.diff
+Turns down the saturation from 90% to 51% (I think).  
+This makes the yellows of the rainbow dirtier,  
+and makes the blues less blackish. (only affects rainbows)  
