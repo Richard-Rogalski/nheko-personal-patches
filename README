@@ -6,11 +6,18 @@ Makes all messages rainbow (as if you typed in `/rainbow` before every message).
 To send a 'normal' message (you boring conformer),  
 prefix a message with /plain or /md respectively.  
 
-# ilikemyfriends,makerainbowsreadable1.diff
+# ilikemyfriends,makerainbowsreadable1.diff  
 Turns down the saturation from 90% to 51% (I think).  
 This makes the yellows of the rainbow dirtier,  
-and makes the blues less blackish. (only affects /rainbow)  
+and makes the blues less blackish.  
+#### (only affects `/rainbow` messages)  
 
-# ideSpisEEveRYone,leTtHemsuFfEr.diff
+# ilikedarkthemes,bringpaintolightthemeusers.diff  
+Makes your messages easy to read for dark themes,  
+but anyone with a light theme will be perpetually squinting.  
+#### (only affects `/rainbow` messages)  
+
+# ideSpisEEveRYone,leTtHemsuFfEr.diff  
 Makes the first half of your message's text white,  
 and the second half black. No theme shall escape your wrath.  
+#### (only affects `/rainbow` messages)  
