@@ -2,14 +2,14 @@ This is a collection of patches I wrote / am planning to write for Nheko.
 They are as follows:  
 
 # makemessagesrainbowbydefault.diff  
-Makes all messages rainbow (as if you typed in `/rainbow` before every message).  
+Sends all your messages rainbow (as if you typed in `/rainbow` before every message).  
 To send a 'normal' message (you boring conformer),  
 prefix a message with /plain or /md respectively.  
 
 # ilikemyfriends,makerainbowsreadable1.diff  
 Turns down the saturation from 90% to 51% (I think).  
-This makes the yellows of the rainbow dirtier,  
-and makes the blues less blackish.  
+This makes the bright yellows of the rainbow dirtier,  
+and makes the dark blues less blackish.  
 #### (only affects `/rainbow` messages)  
 
 # ilikedarkthemes,bringpaintolightthemeusers.diff  
@@ -17,7 +17,24 @@ Makes your messages easy to read for dark themes,
 but anyone with a light theme will be perpetually squinting.  
 #### (only affects `/rainbow` messages)  
 
+# ilikelightthemes,letdarkthemeusersseethe.diff  
+Fellow light theme users likely won't even be able to tell something's amiss.  
+Dark theme users, definitely will to say the least.  
+#### (only affects `/rainbow` messages)  
+
 # ideSpisEEveRYone,leTtHemsuFfEr.diff  
 Makes the first half of your message's text white,  
 and the second half black. No theme shall escape your wrath.  
 #### (only affects `/rainbow` messages)  
+
+These diffs/patches are in the -p1 format, as that's the Gentoo consensus on what level contextual gnu diffs should be.  
+To manually apply any of these diffs/patches to Nheko, run these commands in the main Nheko directory:  
+```
+patch -p1 <nameofanydiffsyouwant.diff  
+```
+And then to build Nheko:  
+```
+cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release  
+cmake --build build  
+```
+Nheko will be built to `build/nheko`. Enjoy!!  
